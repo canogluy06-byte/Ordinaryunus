@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!--
+    Ordinaryunus uygulama simgesi (ana çizim, 48 px ve üstü için).
+    Yuvarlak köşeli kare içinde, kalın gözlüklü, güler yüzlü karakter büstü.
+    Renkler (5): turkuaz #0F766E, açık turkuaz #14B8A6, ten #F1C7A3, mürekkep #1F2937, beyaz #FFFFFF.
+    Küçük boyutlar için elle ayarlanmış çizimler Assets klasöründe: logo-32.svg, logo-24.svg, logo-16.svg.
+  -->
+  <defs>
+    <clipPath id="tile"><rect width="256" height="256" rx="56"/></clipPath>
+  </defs>
+  <g clip-path="url(#tile)">
+    <!-- tile + halo behind the head (gives the dark hair a light silhouette) -->
+    <rect width="256" height="256" fill="#0F766E"/>
+    <circle cx="128" cy="120" r="88" fill="#14B8A6"/>
+
+    <!-- neck, then white shirt with a U neckline and light-teal collar band -->
+    <rect x="110" y="158" width="36" height="46" fill="#F1C7A3"/>
+    <path d="M28 256C28 212 66 188 110 184Q128 204 146 184C190 188 228 212 228 256Z" fill="#FFFFFF"/>
+    <path d="M110 184Q128 204 146 184" fill="none" stroke="#14B8A6" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- ears and face -->
+    <circle cx="74" cy="122" r="12" fill="#F1C7A3"/>
+    <circle cx="182" cy="122" r="12" fill="#F1C7A3"/>
+    <ellipse cx="128" cy="116" rx="54" ry="60" fill="#F1C7A3"/>
+
+    <!-- hair: rounded crown, side-swept fringe ending in a point on the left -->
+    <path d="M70 120C62 80 84 44 124 42C160 40 186 54 190 80C192 94 188 108 184 120H178C177 106 174 94 166 82C146 90 112 94 86 92C84 100 82 110 80 120Z" fill="#1F2937"/>
+
+    <!-- glasses: thick dark frames with white lenses (the key feature at every size) -->
+    <g stroke="#1F2937" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="84" y="102" width="40" height="32" rx="11" fill="#FFFFFF" stroke-width="9"/>
+      <rect x="132" y="102" width="40" height="32" rx="11" fill="#FFFFFF" stroke-width="9"/>
+      <path d="M124 115Q128 111 132 115M84 114H74M172 114H182" fill="none" stroke-width="8"/>
+    </g>
+
+    <!-- pupils and smile -->
+    <circle cx="105" cy="119" r="6.5" fill="#1F2937"/>
+    <circle cx="151" cy="119" r="6.5" fill="#1F2937"/>
+    <path d="M110 150Q128 164 146 150" fill="none" stroke="#1F2937" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

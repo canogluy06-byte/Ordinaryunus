@@ -1,0 +1,51 @@
+# Ordinaryunus depo dışı dosyaları
+
+# --- Derleme ve yayın çıktıları ---
+bin/
+obj/
+yayin/
+yayin-*/
+dagitim/
+publish/
+*.zip
+
+# --- Editör ve işletim sistemi dosyaları ---
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Claude Code'un bu depo için tuttuğu kişisel ayarlar
+.claude/settings.local.json
+
+# --- Test ve hata çıktıları ---
+# --screenshots varsayılan klasörü (exe'nin yanında) ve eski test klasörleri
+test-kanitlari*/
+TestResults/
+*.log
+*.hata.txt
+node_modules/
+
+# --- Obsidian'ın kişisel pencere düzeni ve çöp kutusu (her kasada) ---
+.obsidian/workspace*.json
+.trash/
+
+# --- Örnek kasada çalışma sırasında oluşan dosyalar ---
+# Uygulamanın atomik yazma sırasında hedefin yanına koyduğu geçici dosya (Data/VaultWriter.cs)
+*.ordinaryunus-tmp
+# Acil Durdur bayrağı (Data/SafetyQueue.cs) ve Tam Gaz anahtarı (Data/TamGaz.cs)
+ornek-kasa/_sistem/guvenlik/DURDUR
+ornek-kasa/_sistem/tamgaz/ACIK
+# Tam Gaz zamanlanmış işçisinin kasaya yazdığı durum ve günlük dosyaları (Data/TamGaz.cs okur)
+ornek-kasa/_sistem/tamgaz/codex-nobet.json
+ornek-kasa/_sistem/tamgaz/codex-*.log
+# İstek defteri kancasının kilit dosyası (kasa-araclari/claude-kancalari/istek-defteri.mjs)
+ornek-kasa/_sistem/istek-defteri/.kilit
+# Not: Claude ve Codex işlerinin dosyaları (<damga>.jsonl, .nobet.json, .istem.txt, .kilit.<n>, .iptal, .simdi)
+# kasaya değil %APPDATA%\Ordinaryunus\claude-isler\ ve codex-isler\ altına yazılır (Jobs/NobetciRunner.cs,
+# Jobs/JobStore.cs); onay kararları da %LOCALAPPDATA%\Ordinaryunus\guvenlik\ altındadır. Depoya hiç girmezler.

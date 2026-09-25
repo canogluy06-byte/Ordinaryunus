@@ -1,0 +1,21 @@
+# Metin dosyalarının satır sonlarını git düzenlesin
+* text=auto
+
+# Windows toplu iş ve betik dosyaları her zaman CRLF kalsın (cmd.exe LF ile sorun çıkarabilir)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# İkili dosyalar
+*.png binary
+*.jpg binary
+*.ico binary
+*.dll binary
+*.exe binary
+
+# Dışarıdan alınan, küçültülmüş kütüphane: GitHub dil istatistiğine katılmasın, farkı gösterilmesin.
+# -text: satır sonları hiç değiştirilmesin. Yoksa Windows'ta klonlayınca dosya CRLF'e çevrilir, SHA-256 özeti
+# VERSIONS.txt ile tutmaz ve --selftest kalır.
+Ordinaryunus/wwwroot/lib/*.min.js -text linguist-vendored -diff
+# Lisans metinleri de kaynağındaki gibi (bayt bayt) kalsın
+Ordinaryunus/wwwroot/lib/LICENSE-*.txt -text

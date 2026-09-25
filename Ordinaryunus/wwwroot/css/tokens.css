@@ -1,0 +1,53 @@
+/* SPDX-License-Identifier: GPL-3.0-only */
+/* Ordinaryunus · © 2026 Yunus Emre Canoğlu · GPL-3.0-only + ek şartlar (EK-SARTLAR.md) · https://github.com/canogluy06-byte/Ordinaryunus */
+/* Ordinaryunus v2 — design tokens. Light is default; dark via html[data-theme="dark"]. */
+html[data-theme="light"], html:not([data-theme]) {
+  --bg:#F7F7F5; --bg-glow:rgba(15,118,110,.06);
+  --surface:#FFFFFF; --surface-2:#FBFBFA; --surface-glass:rgba(255,255,255,.78);
+  --border:#E5E7EB; --border-soft:#EEF0F2;
+  --text:#1F2937; --muted:#6B7280; --faint:#9CA3AF;
+  --teal:#0F766E; --teal-hover:#0C6660; --teal-pressed:#0A5550; --on-teal:#FFFFFF;
+  --teal-soft:#E8F3F1; --teal-soft-hover:#D7EBE8;
+  --teal-mid:#6BB3AB; --teal-pale:#B9DCD7; --teal-2:#14B8A6;
+  --slate:#475569; --slate-2:#94A3B8;
+  --green:#15803D; --green-soft:#EAF6EE;
+  --yellow:#CA8A04; --yellow-text:#8A5D00; --yellow-soft:#FDF6E3; --yellow-line:#F1DFAE;
+  --red:#B91C1C; --red-hover:#9F1717; --red-soft:#FDEEEE; --red-line:#F3C9C9;
+  --grey-soft:#F1F2F4; --grey-mid:#D1D5DB;
+  --shadow-1:0 1px 2px rgba(16,24,32,.05), 0 4px 10px rgba(16,24,32,.045), 0 12px 24px rgba(16,24,32,.035);
+  --shadow-2:0 2px 4px rgba(16,24,32,.07), 0 10px 22px rgba(16,24,32,.08), 0 20px 40px rgba(16,24,32,.06);
+  --shadow-3:0 8px 16px rgba(16,24,32,.12), 0 24px 64px rgba(16,24,32,.18);
+  --focus-ring:0 0 0 3px rgba(15,118,110,.35);
+  --scrollbar:#D8DBDF;
+  color-scheme: light;
+}
+html[data-theme="dark"] {
+  --bg:#0E1417; --bg-glow:rgba(45,212,191,.07);
+  --surface:#151D21; --surface-2:#11181B; --surface-glass:rgba(21,29,33,.78);
+  --border:#253038; --border-soft:#1D272D;
+  --text:#E7ECEF; --muted:#9AA6AF; --faint:#6C7A84;
+  --teal:#2DB5A5; --teal-hover:#3FC6B6; --teal-pressed:#26A091; --on-teal:#052522;
+  --teal-soft:#12302C; --teal-soft-hover:#173B36;
+  --teal-mid:#4FA79D; --teal-pale:#1F4D47; --teal-2:#5EEAD4;
+  --slate:#94A3B8; --slate-2:#64748B;
+  --green:#3FBF6F; --green-soft:#132A1D;
+  --yellow:#E3A82B; --yellow-text:#F3C766; --yellow-soft:#2A2313; --yellow-line:#4A3C17;
+  --red:#F06363; --red-hover:#F37B7B; --red-soft:#2E1717; --red-line:#5A2323;
+  --grey-soft:#1B2428; --grey-mid:#3A464E;
+  --shadow-1:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+  --shadow-2:0 4px 10px rgba(0,0,0,.45), 0 16px 40px rgba(0,0,0,.4);
+  --shadow-3:0 12px 24px rgba(0,0,0,.5), 0 32px 80px rgba(0,0,0,.55);
+  --focus-ring:0 0 0 3px rgba(45,181,165,.45);
+  --scrollbar:#2B363D;
+  color-scheme: dark;
+}
+:root{
+  --font-ui:"Segoe UI Variable Text","Segoe UI",system-ui,sans-serif;
+  --font-display:"Segoe UI Variable Display","Segoe UI",sans-serif;
+  --font-mono:"Cascadia Mono","Cascadia Code",Consolas,monospace;
+  --dur-fast:120ms; --dur:200ms; --dur-slow:320ms;
+  --ease-out:cubic-bezier(.2,.8,.2,1); --ease-spring:cubic-bezier(.34,1.56,.64,1);
+  --r-card:16px; --r-btn:12px; --r-small:10px; --r-chip:999px;
+  --nav-w:256px; --nav-rail-w:80px; --topbar-h:68px; --content-pad:32px; --content-max:1560px;
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-5:24px; --sp-6:32px; --sp-7:40px; --sp-8:56px;
+}

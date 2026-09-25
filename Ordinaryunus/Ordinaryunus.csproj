@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Ordinaryunus</RootNamespace>
+    <AssemblyName>Ordinaryunus</AssemblyName>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationVisualStyles>true</ApplicationVisualStyles>
+    <ApplicationUseCompatibleTextRendering>false</ApplicationUseCompatibleTextRendering>
+    <!-- İmza: exe'nin Özellikler > Ayrıntılar sekmesinde görünür. Değerler Imza.cs ile aynı tutulur. -->
+    <Product>Ordinaryunus</Product>
+    <Version>2.1.0</Version>
+    <Authors>Yunus Emre Canoğlu</Authors>
+    <Company>Yunus Emre Canoğlu</Company>
+    <Copyright>© 2026 Yunus Emre Canoğlu · GPL-3.0 + ek şartlar</Copyright>
+    <Description>Ordinaryunus: yapay zekâ ekibini ve Obsidian ikinci beynini tek ekrandan yöneten şifreli masaüstü uygulaması. Yapan: Yunus Emre Canoğlu.</Description>
+    <RepositoryUrl>https://github.com/canogluy06-byte/Ordinaryunus</RepositoryUrl>
+    <SatelliteResourceLanguages>tr</SatelliteResourceLanguages>
+    <InvariantGlobalization>false</InvariantGlobalization>
+    <!-- WFO1000: tasarımcı (designer) kullanılmıyor, kontroller kodda kuruluyor; bu uyarı burada geçerli değil. -->
+    <!-- MSB3277: Microsoft.Web.WebView2 paketi, yalnızca WinForms kullanan projede de WPF derlemesinin WindowsBase
+         başvurusunu getiriyor (bilinen paketleme tuhaflığı, MicrosoftEdge/WebView2Feedback#1288). Microsoft.Web.WebView2.Wpf
+         hiç kullanılmadığı için zararsız. -->
+    <NoWarn>$(NoWarn);WFO1000;MSB3277</NoWarn>
+    <!-- Yayın (publish) için bilgisayarda .NET 10 Desktop Runtime kurulu olmalı (çatıya bağlı, küçük tek exe). -->
+    <SelfContained>false</SelfContained>
+    <DebugType Condition="'$(Configuration)' == 'Release'">none</DebugType>
+    <!-- Paketlerin XML belge dosyaları (Microsoft.Web.WebView2.*.xml) yayın klasörüne kopyalanmasın: çalışmak için gerekmez. -->
+    <PublishReferencesDocumentationFiles>false</PublishReferencesDocumentationFiles>
+  </PropertyGroup>
+
+  <!-- Tasarım dosyaları derlemede isteğe bağlı: eksikse kodla çizilen logo kullanılır. -->
+  <PropertyGroup Condition="Exists('Assets\logo.ico')">
+    <ApplicationIcon>Assets\logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\*.png;Assets\*.ico" LogicalName="Assets.%(Filename)%(Extension)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3179.45" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="wwwroot\**\*" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+
+</Project>
