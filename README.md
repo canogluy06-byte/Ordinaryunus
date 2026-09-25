@@ -24,4 +24,4 @@ hiçbir firmanın sunucusuna kilitlenmez.
 Ordinaryunus'u **Yunus Emre Canoğlu** tasarladı ve geliştirdi (2026). Kod yazımında Claude (Anthropic) ve
 Codex (OpenAI) yapay zekâ ekibim olarak çalıştı; fikir, tasarım kararları, yönetim ve onaylar bana ait.
 
-Lisans: [MIT](LICENSE). Kullanırsan ya da çatallarsan (fork) imzayı ve LICENSE dosyasını koru.
+Lisans: [GPL-3.0](LICENSE) + [ek şartlar](EK-SARTLAR.md). Kısaca: kodu kullanabilir, değiştirebilir ve paylaşabilirsin; ama değiştirdiğin sürümü de açık kaynak paylaşmalısın, uygulamadaki logo + `Ordinaryunus` adı + `Yunus Emre Canoğlu tarafından yapıldı` imzası silinemez ve Ordinaryunus adı/logosu kendi ürünün gibi kullanılamaz.
