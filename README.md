@@ -2,7 +2,7 @@
 
 **Yapay zekâ ekibini ve Obsidian ikinci beynini tek ekrandan yöneten, şifreli bir Windows masaüstü uygulaması.**
 
-> **Kod bugün yükleniyor.** LinkedIn'de isteyen herkese söz vermiştim: kodu kişisel verilerimden temizleyip
+> **Bu geçici bir tanıtım sayfası; kodun tamamı 1-2 saat içinde yükleniyor.** LinkedIn'de isteyen herkese söz vermiştim: kodu kişisel verilerimden temizleyip
 > uydurma verili örnek bir kasayla birlikte buraya koyuyorum. Şu an son temizlik ve güvenlik denetiminden geçiyor.
 > Haberdar olmak için depoyu yıldızlayabilir (Star) ya da izleyebilirsiniz (Watch).
 
